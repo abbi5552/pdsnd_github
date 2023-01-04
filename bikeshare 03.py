@@ -15,7 +15,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-# an empty variable was initiated 
+# an empty variable was initiated
     city = ''
     # looping out to check weather city entered is available or not
     while city not in CITY_DATA.keys():
@@ -83,7 +83,7 @@ def load_data(city, month, day):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
-    #Filtering by month 
+    #Filtering by month
     if month != 'all':
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
@@ -249,7 +249,7 @@ def display_data(df):
     counter = 0
     while rdata not in BIN_RESPONSE_LIST:
         print("\nDo you wish to view the raw data?")
-       
+
         rdata = input().lower()
         #Raw data to be displayed of user input yes
         if rdata == "yes":
@@ -261,11 +261,11 @@ def display_data(df):
     #A while loop here to prompt the user if he wishes to continue exploring the data
     while rdata == 'yes':
         print("Do you wish to view more raw data?")
-        counter += 5
+        counter += 10
         rdata = input().lower()
         #If user wishes to continue exploring data, this will continue to show 5 more rows of data
         if rdata == "yes":
-             print(df[counter:counter+5])
+             print(df[counter:counter+10])
         elif rdata != "yes":
              break
 
