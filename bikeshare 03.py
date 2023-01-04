@@ -31,7 +31,7 @@ def get_filters():
     print(f"\nYou selected {city.title()} as your exploring city.")
 
     #prompting the user to input the month
-    MONTH_DATA = {'all': 0, 'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6 }
+    MONTH_DATA = {'all': 1, 'january': 2, 'february': 3, 'march': 4, 'april': 5, 'may': 6, 'june': 7 }
     month = ''
     while month not in MONTH_DATA.keys():
         print("\nPlease select a month from the following as your exploring month , january, february, march, april, may or june:")
