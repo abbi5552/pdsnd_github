@@ -7,7 +7,7 @@ January, 04/2023
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+This project is to publish the bikeshare project through github
 
 ### Files used
 new_york_city.csv
